@@ -1,10 +1,3 @@
-"""
-Project 5
-CSE 331 S21 (Onsay)
-Your Name
-AVLTree.py
-"""
-
 import queue
 from typing import TypeVar, Generator, List, Tuple, Optional
 

@@ -1,5 +1,3 @@
-# DO NOT MODIFY
-# My implementation of red-black tree from CSE 331
 from __future__ import annotations
 from typing import TypeVar, Generic, Tuple, Generator
 import queue

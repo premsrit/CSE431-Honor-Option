@@ -1,10 +1,3 @@
-"""
-Project 5
-CSE 331 S21 (Onsay)
-Your Name
-SplayTree.py
-"""
-
 import queue
 from typing import TypeVar, Generator, List, Tuple, Optional
 
@@ -443,12 +436,24 @@ class SplayTree:
         return root
 
     def __getitem__(self, key):
+        """
+        Making tree can be inference like dict(),
+        this function will query value from tree
+        :param key: key to be accessed
+        :return: root node of balanced subtree.
+        """
         found_node = self.search(self.root, key)
         if found_node is None:
             raise KeyError('Key doesn\'t exist')
         return found_node.value
 
     def __delitem__(self, key):
+        """
+        Making tree can be inference like dict()
+
+        :param key: key to be accessed
+        :return: root node of balanced subtree.
+        """
         self.remove(self.root, key)
 
     def __contains__(self, item):
